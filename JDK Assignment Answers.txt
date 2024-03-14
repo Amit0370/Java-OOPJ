@@ -1,0 +1,60 @@
+1) Explain the components of the JDK.
+ANS - 
+1.Java Compiler - The compiler checks syntax errors and generates bytecode instructions from the source code.
+2.Java Virtual Machine : The JVM is responsible for executing Java bytecode. It provides a runtime environment for Java applications.
+3.Java Runtime Environment : The JRE provides the runtime environment for Java applications to execute. It includes the JVM and libraries necessary for running Java applications.
+4.Java Development Tools: The JDK includes various development tools and utilities to aid developers in writing, compiling, debugging, and packaging Java applications.
+5.Java API Libraries: The JDK includes a vast set of standard libraries known as the Java API. These libraries provide pre-written code for common tasks such as I/O operations, networking, data structures, GUI development, and much more. 
+
+
+2) Differentiate between JDK, JVM, and JRE.
+ANS-
+JDK is the development platform, while JRE is for execution.
+JVM is the foundation, or the heart of Java programming language, and ensures the program’s Java source code will be platform-agnostic.
+JVM is included in both JDK and JRE – Java programs won’t run without it.
+
+3) What is the role of the JVM in Java? & How does the JVM execute Java code?
+ANS- The Java Virtual Machine (JVM) is a runtime framework for Java code and programs that translates bytecode into machine language.
+-The Java compiler converts Java source code into bytecode.
+-The JVM loads the bytecode into memory.
+-The JVM verifies the bytecode to make sure that it is valid.
+-The JVM creates a class object for each class in the bytecode.
+-The JVM initializes the class objects and their associated data.
+-The JVM calls the main() method of the application class.
+-The JVM executes the bytecode instructions in the main() method and any other methods that are called.
+-The JVM terminates when the main() method returns.
+
+4) Explain the memory management system of the JVM.
+ANS - 
+The memory management system of the Java Virtual Machine (JVM) is responsible for allocating and managing memory for Java applications. It includes several components and mechanisms to efficiently utilize memory resources while ensuring proper allocation and deallocation of memory. 
+
+5) What are the JIT compiler and its role in the JVM? What is the bytecode and why is it important for Java?
+ANS- 
+The Just In Time compiler is a crucial component of the Java Virtual Machine  responsible for improving the performance of Java applications by dynamically compiling Java bytecode into native machine code at runtime.
+Bytecode is the intermediate representation of Java source code compiled by the Java compiler.
+It consists of platform-independent instructions that can be executed by any JVM implementation.
+
+6) Describe the architecture of the JVM.
+ANS- 
+-The Java Virtual Machine (JVM) architecture consists of several key components:
+
+-Class Loader Subsystem: Loads class files into the JVM from various sources like the bootstrap classpath, extension classpath, and application classpath.
+
+-Runtime Data Areas: These include the Method Area, Heap, Java Stack, PC Register, and Native Method Stack, which store class metadata, objects, method invocation frames, program counters, and native method information.
+
+-Execution Engine: Interprets and executes Java bytecode instructions. It includes an interpreter for initial execution and a Just-In-Time (JIT) compiler for optimizing frequently executed bytecode into native machine code.
+
+-Native Method Interface: Provides a bridge between Java code and native libraries, allowing Java programs to access platform-specific functionality.
+
+-Native Method Libraries: Implementations of native methods for accessing system resources not available in Java, such as file I/O and networking.
+
+7) How does Java achieve platform independence through the JVM?
+ANS-Java achieves platform independence through the Java Virtual Machine (JVM) by compiling Java source code into bytecode, which can run on any platform with a compatible JVM implementation. The JVM interprets bytecode and translates it into native machine code, allowing Java applications to run consistently across different hardware and operating systems without modification.
+
+8) What is the significance of the class loader in Java? What is the process of garbage collection in Java.
+ANS-
+Significance of Class Loader in Java:
+-The class loader in Java dynamically loads classes at runtime, manages the classpath, ensures class loading isolation, and enables customization and security in Java applications.
+
+-Process of Garbage Collection in Java:
+Garbage collection in Java automatically reclaims memory occupied by unreachable objects, involving detection of unreachable objects, marking live objects, and sweeping through the heap to free up memory occupied by garbage objects.
